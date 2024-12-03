@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- URL de la base de datos -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <!-- Nombre de usuario de la base de datos -->
+        <property name="hibernate.connection.username">user</property>
+        <!-- Contraseña de la base de datos -->
+        <property name="hibernate.connection.password">123</property>
+
+        <!-- Driver JDBC -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!-- Dialecto de Hibernate -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <!-- Crear las tablas automáticamente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Hibernate Settings -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Mappings -->
+        <mapping class="Datos.DatosPokedex"/>
+        <mapping class="Datos.DatosAdestrador"/>
+        <mapping class="Datos.DatosPokemon"/>
+    </session-factory>
+</hibernate-configuration>

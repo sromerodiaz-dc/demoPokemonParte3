@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<adestradores>
+    <adestrador>
+        <id>1</id>
+        <nacemento>3890-06-05T00:00:00+02:00</nacemento>
+        <nome>Pepe</nome>
+    </adestrador>
+    <adestrador>
+        <id>2</id>
+        <nacemento>3895-07-06T00:00:00+02:00</nacemento>
+        <nome>Manolo</nome>
+    </adestrador>
+</adestradores>
